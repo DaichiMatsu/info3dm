@@ -18,3 +18,12 @@ class LinearRegression:
 
     def predict(self, x):
         return np.dot(x, self.theta)
+    
+class RidgeRegression(LinearRegression):
+    alpha = None
+
+    def __init__(self, alpha=0.1):
+        self.alpha = alpha
+
+    def fit(self, input, output):
+        pass
